@@ -1,11 +1,4 @@
-h1 {
-  font-size: 23px;
-  font-family: 'Roboto Condensed', sans-serif;
-  color: rgb(50, 50, 50);
-}
-
-h2 {
-  font-size: 19px;
+h1, h2 {
   font-family: 'Roboto Condensed', sans-serif;
   color: rgb(50, 50, 50);
 }
@@ -24,6 +17,7 @@ a {
   background-color: rgb(180, 180, 180);
   padding: 8px;
   border-radius: 14px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,.15);
 }
 
 a:hover {
@@ -44,8 +38,8 @@ a:hover {
 .card {
   background-color: rgb(245, 249, 252);
   border-radius: 5px;
-  box-shadow: 5px 5px 5px 0.2;
-  margin: 30px auto;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+  margin: 30px 30px;
   padding: 23px;
 }
 
@@ -61,11 +55,12 @@ a:hover {
 }
 
 .list-inline a {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(245, 249, 252);
+  font-size: 40px;
 }
 
 .list-inline a:hover {
-  font-size: 70px;
+  font-size: 50px;
   transition-delay: .5s ease-in;
 }
 
