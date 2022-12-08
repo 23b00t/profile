@@ -10,7 +10,8 @@ body {
   font-size: 14px;
 }
 
-a {
+
+.btn-grey {
   text-decoration: none;
   font-weight: bold;
   color: rgb(23, 23, 23);
@@ -20,19 +21,24 @@ a {
   box-shadow: 2px 2px 5px rgba(0,0,0,.15);
 }
 
-a:hover {
+.btn-grey:hover {
   color: rgb(0, 0, 0);
   background-color: rgb(150, 150, 150);
   transition-delay: .2s ease-in;
 }
 
-#profile-img {
+.img-round {
   width: 200px;
   border-radius: 50%;
 }
 
 .container {
   text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .card {
@@ -46,22 +52,33 @@ a:hover {
 .list-inline > li {
   display: inline-block;
   padding: 0px 20px;
-  font-size: 50px;
+  font-size: 23px;
 }
 
 .list-inline {
   list-style: none;
   padding-left: 0px;
+  height: 32px;
 }
 
 .list-inline a {
-  background-color: rgb(245, 249, 252);
-  font-size: 40px;
+  background-color: rgb(245, 245, 245);
+  font-size: 23px;
+  color: rgb(32, 32, 32);
+
 }
 
-.list-inline a:hover {
-  font-size: 50px;
+.list-inline li:hover {
+  transform: scale(1.5);
   transition-delay: .5s ease-in;
+  color: rgb(5, 5, 5);
+
+}
+
+@media (min-width: 961px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 @media (max-width: 960px) {
